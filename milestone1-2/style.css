@@ -1,0 +1,204 @@
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: ivory;
+    margin: 0px;
+    padding: 150px;
+}
+.resumecontainer{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+     border-radius: 10px;
+    box-shadow: 0 5px 10px black;
+}
+.leftsection{
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid red;
+}
+.profile-pick{
+    width: 150px;
+    height: 150px;
+     margin-top: 10%; 
+    border-radius: 50%;
+    border: 5px solid  red;
+     margin-bottom: 20px; 
+}
+h3{
+    font-size: 15px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px red;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 30px; 
+}
+p{
+    font-size: 20px;
+    font-style:italic;
+}
+/* ----------------right section------------------------------------- */
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    color: red;
+    font-weight: bolder;
+}
+.rightsection{
+    padding: 20px;
+    width: 65%;
+}
+ul{
+    list-style-type: circle;
+    padding: 10;
+    margin: 10px 0;
+}
+ul li{
+    margin: 5px 0;
+}
+button{
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    box-shadow:0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+button:hover{
+    background-color: aquamarine;
+}
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+    .resumecontainer {
+        flex-direction: column;
+    }
+
+    .leftsection, .rightsection {
+        width: 100%; 
+        border-right: none; 
+        border-bottom: 5px solid blue; 
+    }
+
+    .profile-pick {
+        width: 100px;
+        height: 100px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+/* For tablets and smaller devices (768px and up) */
+@media (max-width: 768px) {
+    .resumecontainer {
+        padding: 10px; 
+    }
+
+    .profile-pick {
+        width: 80px;
+        height: 80px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+/* For mobile devices (480px and up) */
+@media (max-width: 480px) {
+    body {
+        padding: 100px 0;
+    }
+
+    .resumecontainer {
+        padding: 5px;
+    }
+
+    .profile-pick {
+        width: 70px;
+        height: 70px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+/* For very small devices (320px and up) */
+@media (max-width: 320px) {
+    body {
+        padding: 50px 0;
+    }
+
+    .resumecontainer {
+        padding: 0;
+    }
+
+    .profile-pick {
+        width: 60px;
+        height: 60px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 10px;
+    }
+}
